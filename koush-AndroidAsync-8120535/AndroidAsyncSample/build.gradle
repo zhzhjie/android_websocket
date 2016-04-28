@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile project(':AndroidAsync:AndroidAsync')
+}
+
+android {
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            res.srcDirs = ['res/']
+            java.srcDirs = ['src/']
+        }
+    }
+
+    defaultConfig {
+        targetSdkVersion 22
+        minSdkVersion 9
+    }
+
+    compileSdkVersion 22
+    buildToolsVersion "22.0.0"
+}
+
